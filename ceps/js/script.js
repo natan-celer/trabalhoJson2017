@@ -7,7 +7,12 @@ function buscaCep(cep) {
     $.ajax({
         url: getUrl(cep),
     }).done(function (dados) {
-        $(".dados").html(dados.localidade + ", " + dados.uf);
+        $(".dados").html(dados.localidade + ", " + dados.uf + "<br>" );
+        
+        $(".dados").append(dados.logradouro+", "+dados.bairro);
+        
+    }).fail(function(){
+       $(".dados").html("Deu erro !!");
     });
 }
 
