@@ -34,7 +34,7 @@ nav ul li:hover {
     background-color: rgba(33, 50, 88, 0.55);
     width: 100%;
     margin-top: 70px;
-    position: fixed;
+    position: absolute;
     padding: 30px;
 }
 
@@ -61,8 +61,10 @@ button.busca {
 }
 
 .dados {
-    padding: 50px 10px 10px 0;
+    padding: 10px 10px 10px 0;
     color: #FFF;
-    font-size: 30px;
-    text-align: center;
+    font-size: 16px;
+    text-align: left;
+    position: relative;
+    display: block;
 }
